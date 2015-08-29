@@ -1,0 +1,23 @@
+Description: Disable simplecov while running tests
+Author: Balasankar C <balasankarc@autistici.org>
+Last-Update: 2015-08-29
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/spec/spec_helper.rb
++++ b/spec/spec_helper.rb
+@@ -1,15 +1,5 @@
+ # coding: utf-8
+ 
+-require "simplecov"
+-require "coveralls"
+-
+-SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
+-  SimpleCov::Formatter::HTMLFormatter,
+-  Coveralls::SimpleCov::Formatter
+-]
+-
+-SimpleCov.start { add_filter "/spec/" }
+-
+ require "http/form_data"
+ require "support/fixtures_helper"
+ 
