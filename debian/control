@@ -3,10 +3,7 @@ Section: ruby
 Priority: optional
 Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
 Uploaders: Balasankar C <balasankarc@autistici.org>
-Build-Depends: debhelper (>= 9~),
-               gem2deb,
-               rake,
-               ruby-rspec
+Build-Depends: debhelper (>= 9~), gem2deb, rake, ruby-rspec
 Standards-Version: 3.9.6
 Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-http-form-data.git
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-http-form-data.git
@@ -17,8 +14,8 @@ XS-Ruby-Versions: all
 Package: ruby-http-form-data
 Architecture: all
 XB-Ruby-Versions: ${ruby:Versions}
-Depends: ruby | ruby-interpreter,
-         ${misc:Depends},
-         ${shlibs:Depends}
-Description: http-form_data-1.0.1
- Utility-belt to build form data request bodies. Provides support for `application/x-www-form-urlencoded` and `multipart/form-data` types.
+Depends: ruby | ruby-interpreter, ${misc:Depends}, ${shlibs:Depends}
+Description: utility-belt to build form data request bodies
+ This gem provides support for `application/x-www-form-urlencoded` and
+ `multipart/form-data` types. It was pulled out from the gem 'http' to provide
+ ability to build form data request bodies.

@@ -1,5 +1,5 @@
-ruby-http-form-data (1.0.1-1) UNRELEASED; urgency=medium
+ruby-http-form-data (1.0.1-1) unstable; urgency=medium
 
-  * Initial release (Closes: #nnnn)
+  * Initial release (Closes: #797277)
 
- -- Balasankar C <balasankarc@autistici.org>  Sat, 29 Aug 2015 12:58:15 +0530
+ -- Balasankar C <balasankarc@autistici.org>  Sat, 29 Aug 2015 12:25:49 +0530
